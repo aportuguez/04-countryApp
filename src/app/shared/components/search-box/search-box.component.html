@@ -1,1 +1,1 @@
-<input type="text" [placeholder]="placeholder" class="form-control">
+<input type="text" [placeholder]="placeholder" class="form-control" (keyUp.enter)="emitValue(txtInput.value)" #txtInput>
