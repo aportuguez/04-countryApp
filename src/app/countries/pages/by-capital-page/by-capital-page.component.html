@@ -4,7 +4,8 @@
   <div class="col">
     <!-- search box -->
     <!-- (onValue)=searchByCapital($event) estaba este antes del onDebounce -->
-    <shared-search-box placeholder="Search by Capital" (onDebounce)="searchByCapital($event)"></shared-search-box>
+    <shared-search-box placeholder="Search by Capital" [initialValue]="initialValue"
+      (onDebounce)="searchByCapital($event)"></shared-search-box>
   </div>
 </div>
 <hr>
